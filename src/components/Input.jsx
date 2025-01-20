@@ -29,12 +29,15 @@ function Input({ onsubmit}) {
           setInputValue(e.target.value);
         }}
       />
-      <div>
+      {/* <div>
         <input
           type="file"
           accept="image/*"
           id="imageUpload"
           className="hidden"
+          onChange={(e) => {
+            setInputValue(e.target.value);
+          }}
         />
         <label htmlFor="imageUpload" className="cursor-pointer ">
           <RiImageAddLine
@@ -42,7 +45,7 @@ function Input({ onsubmit}) {
             className=" hover:bg-slate-600 p-2 mt-3 rounded-full"
           />
         </label>
-      </div>
+      </div> */}
       <button type="submit">
         <RiSendPlane2Fill
           size={40}
